@@ -17,10 +17,12 @@ class ExpandableTextView : AppCompatTextView, View.OnClickListener {
     private lateinit var animator: ValueAnimator
     private var isCollapsing = true
 
+//можно ли обойтись без конструкторов?
     constructor(context: Context) : super(context) {
         init()
     }
 
+    //
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs) {
         init()
     }
